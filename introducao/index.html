@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>Aparecida Nutrição</title>
+		<title>Testes</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -11,12 +11,15 @@
 
 		<header>
 			<div class="container">
-				<h1 class="titulo">Aparecida Nutrição</h1>
+				<h1 class="titulo">Playground Js</h1>
 			</div>
 		</header>
 		<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
+				<label for="filtrar-tabela">Filtre:</label>
+				<input type="text" name= "filtro" id= "filtrar-tabela"
+				placeholder="Digite o nome do paciente">				
 				<table>
 					<thead>
 						<tr>
@@ -68,7 +71,8 @@
 						</tr>
 					</tbody>
 				</table>
-
+				<span id  ="erro-ajax" class = "invisivel">Erro ao buscar os pacientes</span>
+				<button id="buscar-paciente" class="botao bto-principal">Buscar</button>
 			</section>
 		</main>
 		<section class="container">
@@ -93,10 +97,14 @@
 				</div>
 		
 				<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+				
 			</form>
 		</section>
 
 	</body>
 	<script src="js/calcula-imc.js"></script>
 	<script src="js/form.js"></script>
+	<script src="./js/remover-paciente.js"></script>
+	<script src="./js/filtra.js"></script>
+	<script src= "./js/buscar-pacientes.js"></script>
 </html>

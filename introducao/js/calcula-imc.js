@@ -1,5 +1,3 @@
-var titulo = document.querySelector(".titulo");
-titulo.textContent = "Aparecida Nutricionista";
 
 //query selector retorna unicamente um elemento
 var pacientes = document.querySelectorAll(".paciente");
@@ -36,11 +34,12 @@ for(var i =0;i<pacientes.length;i++){
         tdImc.textContent = calculaImc(peso,altura);
     }    
 }
+
 function calculaImc(peso,altura){
     return (peso/Math.pow(altura,2)).toFixed(2);
 }
 function validaPeso(peso){
-    if(peso >=0 && peso <=1000)
+    if(peso >0 && peso <=1000)
         return true;
     else
         return false;
