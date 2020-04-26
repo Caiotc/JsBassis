@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário,AJAX e Via-CEP</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap"]
+     rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-form">
+            <h1>ESTUDO JS - AJAX E VIA-CEP</h1>
+        </div>
+    </header>
+    <main>
+        <section class = "container">
+            <form id="logradouro">
+                <div class="grupo">
+                    <label for="cep">CEP:</label>
+                    <input class ="input-padrao" type="text" name="cep" id="cep" placeholder="XXXXX-XX">
+                </div>
+                <div class="grupo">
+                    <label for="endereco">Endereço:</label>
+                    <input class ="input-padrao" type="text" name="cep" id="endereco" >
+                </div>
+                <div class="grupo">
+                    <label for="numero">Numero:</label>
+                    <input class ="input-padrao" type="text" name="numero" id="numero" >
+                </div>
+                <div class="grupo">
+                    <label for="bairro">Bairro:</label>
+                    <input class ="input-padrao" type="text" name="bairro" id="bairro" >
+                </div>
+                <div class="grupo">
+                    <label for="complemento">Complemento:</label>
+                    <input class ="input-padrao" type="text" name="complemento" id="complemento" >
+                </div>
+                <div class="grupo">
+                    <label for="cidade">Cidade:</label>
+                    <input class ="input-padrao" type="text" name="cidade" id="cidade">
+                </div>
+                <div class="grupo">
+                    <label for="estado">Estado:</label>
+                    <input  class ="input-padrao" type="text" name="estado" id="estado" >
+                </div>
+                <button id="buscar-cep">Buscar</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+<script src = "./JS/vica-cep.js"></script>
+</html>
